@@ -1,0 +1,298 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f5f1;
+  --primary: #b9865b;
+  --primary-dark: #9b6a41;
+  --text: #1f1b16;
+  --muted: #6c5f55;
+  --card: #ffffff;
+  --border: #eadfd4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  padding: 32px 8vw 80px;
+  background: radial-gradient(circle at top left, #fff6eb 0%, #f8f5f1 55%, #f3ede6 100%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  margin: 16px 0;
+}
+
+.hero-text p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.tag {
+  background: #f0e1d1;
+  color: var(--primary-dark);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--primary-dark);
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.hero-card {
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.card-header img {
+  height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-body h3 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.card-info {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.card-info span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: block;
+}
+
+main {
+  padding: 48px 8vw 80px;
+}
+
+.benefits {
+  margin-bottom: 72px;
+}
+
+.benefits h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.benefit {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.form-section {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid var(--border);
+  margin-bottom: 72px;
+}
+
+.form-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.lead-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  gap: 8px;
+}
+
+.form-row-full {
+  grid-column: 1 / -1;
+}
+
+input,
+select,
+textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #e7c8ab;
+  border-color: #e7c8ab;
+}
+
+.form-status {
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  min-height: 20px;
+}
+
+.map-section {
+  display: grid;
+  gap: 24px;
+}
+
+.map-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.map-header p {
+  color: var(--muted);
+}
+
+.map {
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.map-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.footer {
+  padding: 32px 8vw 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: #f1ebe5;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .hero,
+  main {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .form-section {
+    padding: 28px;
+  }
+}
