@@ -234,40 +234,31 @@ textarea:focus {
   min-height: 20px;
 }
 
-.map-section {
+.coverage-section {
   display: grid;
   gap: 24px;
 }
 
-.map-header h2 {
+.coverage-header h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
 }
 
-.map-header p {
+.coverage-header p {
   color: var(--muted);
 }
 
-.map {
-  height: 420px;
+.coverage-image {
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid var(--border);
+  height: 420px;
 }
 
-.map-legend {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.legend-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--primary);
+.coverage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
